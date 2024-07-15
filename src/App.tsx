@@ -8,6 +8,7 @@ import Finish from "./components/Finish";
 
 
 
+
 function App() {
   //making object to store the values of the all form 
   const [info, setInfo] = useState({
@@ -185,7 +186,7 @@ function App() {
 
   return (
     <section className="w-full lg:w-fit lg:flex flex-col justify-center items-center lg:items-stretch lg:flex-row lg:relative    gap-12 lg:mt-12 lg:p-4 m-auto lg:bg-white rounded-md lg:shadow-md lg:min-h-0 min-h-[800px] ">
-      <aside className=" lg:bg-main-aside bg-mobile-aside bg-center bg-cover lg:p-12 pt-8 h-44 lg:h-auto  ">
+      <aside id="test" className=" bg-center bg-cover lg:p-12 pt-8 h-44 lg:h-auto  ">
         <div className="flex justify-center gap-5 lg:block">
 
           {/* Loopin on the steps for the steps menu on the aside */}

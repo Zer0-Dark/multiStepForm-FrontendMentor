@@ -1,8 +1,15 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-
-body{
-    background-color:cornsilk;
+body {
+  background-color: cornsilk;
+}
+#test {
+  background-image: url("./assets//bg-sidebar-mobile.svg");
+}
+@media screen and (min-width: 900px) {
+  #test {
+    background-image: url("./assets//bg-sidebar-desktop.svg");
+  }
 }

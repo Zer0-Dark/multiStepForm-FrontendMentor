@@ -9,10 +9,7 @@ export default {
       'lg': "900px"
     },
     extend: {
-      backgroundImage: {
-        'main-aside': "url('./src/assets/bg-sidebar-desktop.svg')",
-        'mobile-aside': "url(./src/assets/bg-sidebar-mobile.svg)"
-      },
+
       colors: {
         "neutral-cool-gray": "#9699ab",
         "neutral-light-gray": "#d5d8e5",
