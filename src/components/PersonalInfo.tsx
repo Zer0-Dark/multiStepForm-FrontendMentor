@@ -39,7 +39,7 @@ function PersonalInfo({ but, info, error }: Props) {
                         placeholder="e.g.Stephen King"
                         value={info.name}
                         onChange={handleName}
-                        className={` w-[90%] lg:w-full focus:outline-primary-purplish-blue p-2 rounded-md mt-2 border-2 `}
+                        className={` w-[90%] lg:w-full focus:outline-primary-purplish-blue p-2 rounded-md mt-2 border-2 ${error.name ? "border-primary-straberry-red" : ""} `}
                         type="text"
                     />
 
@@ -53,7 +53,7 @@ function PersonalInfo({ but, info, error }: Props) {
                         placeholder="e.g.stephenking@lorem.com"
                         value={info.mail}
                         onChange={(e) => { but("mail", e.target.value) }}
-                        className={`w-[90%] lg:w-full   focus:outline-primary-purplish-blue p-2 rounded-md mt-2 border-2 `}
+                        className={`w-[90%] lg:w-full   focus:outline-primary-purplish-blue p-2 rounded-md mt-2 border-2 ${error.mail ? "border-primary-straberry-red" : ""} `}
                         type="email"
                     />
 
@@ -66,7 +66,7 @@ function PersonalInfo({ but, info, error }: Props) {
                         placeholder="e.g. +1 234 567 890"
                         value={info.phone}
                         onChange={(e) => { but("phone", e.target.value) }}
-                        className={`w-[90%] lg:w-full  focus:outline-primary-purplish-blue p-2 rounded-md mt-2 border-2 `}
+                        className={`w-[90%] lg:w-full  focus:outline-primary-purplish-blue p-2 rounded-md mt-2 border-2 ${error.phone ? "border-primary-straberry-red" : ""} `}
                         type="tel"
 
                     />
